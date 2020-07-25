@@ -1,37 +1,61 @@
-import React, { useState } from 'react';
-import { populateFormField } from '../../utils/populateFormField'; 
-import { Modal, TextField, Button } from '@material-ui/core';
-import { modalStyles } from '../Styles/Styles';
+import React, { useState } from "react";
+import { populateFormField } from "../../utils/populateFormField";
+import { Modal, TextField, Button } from "@material-ui/core";
+import { modalStyles } from "../Styles/Styles";
 
-export default function PopModal({open, close, data={}, changeState} ) {
+export default function PopModal({
+  open,
+  close,
+  data = {},
+  changeStateModal,
+  onClickAddNewTasks,
+}) {
+  const classes = modalStyles();
+  const [teste, setTeste] = useState("");
 
-    const classes = modalStyles();
+  const { titulo, descricao } = data;
 
-    function _onChangeDescricao(nome, valor){
-        const value = valor;
-        const dataUpdated = {...data, [nome]: populateFormField(value) };
-        changeState(dataUpdated, nome);
-        console.log("dataUpdated", dataUpdated);
-    }
+  return (
+    <div>
+      <Modal open={open} onClose={close} className={classes.modal}>
+        <form className={classes.paper}>
+          <h1>Hello World</h1>
 
-    function _SaveCard(){
+          <TextField
+            id="standard-basic"
+            label="Título"
+            value={titulo}
+            onChange={(ev) => changeStateModal("titulo", ev.target.value)}
+          />
 
-    }
+          <TextField
+            id="standard-basic"
+            label="Descrição"
+            value={descricao}
+            variant="outlined"
+            rows={4}
+            onChange={(ev) => changeStateModal("descricao", ev.target.value)}
+          />
 
-    return (
-        <div >
-            <Modal open={open} onClose={close} >
-                <form className={classes.paper}> 
-                <h1>Hello World</h1>
-                <TextField id="standard-basic"
-                label="Título"
-                onChange={(valor) =>  _onChangeDescricao( "titulo", valor.target.value) } />
-                <TextField id="standard-basic" label="Descrição" variant="outlined" rows={4} onChange={(valor) =>  _onChangeDescricao( "descricao", valor.target.value) }/>
-                <Button title="Cancel" color="secondary" variant="contained" onClick={close}>Cancel</Button>
-                <Button title="Finish" color="primary" variant="contained" onClick={_SaveCard()}>Finish</Button>
+          <Button
+            title="Cancel"
+            color="secondary"
+            variant="contained"
+            onClick={close}
+          >
+            Cancel
+          </Button>
 
-                </form>
-            </Modal>
-        </div>
-    )
+          <Button
+            title="Finish"
+            color="primary"
+            variant="contained"
+            onClick={onClickAddNewTasks}
+          >
+            Finish
+          </Button>
+        </form>
+      </Modal>
+    </div>
+  );
 }

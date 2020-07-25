@@ -1,13 +1,12 @@
-import React from 'react'
-import { Button, Card, CardContent  } from '@material-ui/core';
+import React from "react";
 import CardViewContent from "../CardView/CardViewContent";
 
-export default function CardView({arrayTasks, data}) {
-    return (
-        <CardViewContent data={data}/>
-        // arrayTasks.map(todo => {
-        //     return <CardViewContent key={data} data={data}/>} )
-               
-       
-    )
+export default function CardView({ data }) {
+  return (
+    <ul>
+      {data.map((task) => (
+        <CardViewContent data={task} />
+      ))}
+    </ul>
+  );
 }

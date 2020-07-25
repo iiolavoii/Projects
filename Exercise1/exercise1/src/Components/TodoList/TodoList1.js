@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import CardView from "../CardView/Cardview";
-import { Button, Tooltip, Fab, Grid } from "@material-ui/core";
+import { Button, Tooltip, Fab } from "@material-ui/core";
 import AddIcon from "@material-ui/icons/Add";
 import PopModal from "../Modals/Modal";
 import { TITULO } from "../../utils/enumeradores";
 
-export default function TodoList() {
+export default function TodoList1() {
   const [tasks, setTasks] = useState([]);
   const [modalState, setModalState] = useState({
     isOpen: false,
@@ -19,14 +19,18 @@ export default function TodoList() {
 
   function _onClickAddNewTasks() {
     const { titulo, descricao } = modalState;
-    setTasks([...tasks, { titulo, descricao, date: new Date() }]);
+    setTasks([...tasks, { titulo, descricao }]);
     setModalState({ ...modalState, titulo: "", descricao: "" });
   }
 
   return (
     <div>
-      <h1>To do List</h1>
-
+      <h1>To do List 1</h1>
+      <ul>
+        {tasks.map((task) => (
+          <li>{`${task.titulo} - ${task.descricao}`}</li>
+        ))}
+      </ul>
       <Tooltip title="Create" aria-label="add">
         <Fab color="primary">
           <AddIcon
@@ -36,17 +40,7 @@ export default function TodoList() {
           />
         </Fab>
       </Tooltip>
-      {/* <Grid container spacing={2}>
-        <Grid
-          direction="row"
-          item
-          xs={3}
-          justify="space-evenly"
-          alignItems="center"
-        > */}
       <CardView data={tasks} />
-      {/* </Grid>
-      </Grid> */}
       <PopModal
         open={modalState.isOpen}
         close={() => {
