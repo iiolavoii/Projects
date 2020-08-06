@@ -8,9 +8,12 @@ function App() {
   return (
     <div>
       <TodoList />
-      <TodoList1 />
-      <TodoList2 />
-      <TodoList3 />
+      {/*
+      //diferentes exemplos de tratar do state
+      // <TodoList1 />
+      // <TodoList2 />
+      // <TodoList3 />
+      */}
     </div>
   );
 }
