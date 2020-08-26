@@ -1,0 +1,173 @@
+<style>
+  /*The @media rule is used in media queries to apply different styles for different media types/devices.*/
+  @media (min-width: 468px) {
+    .container-1 {
+      display: flex;
+      /*
+    *Aligns acording to the height!
+
+    align-items: flex-start; - TOP
+    align-items: flex-end; - BOTTOM
+    align-items: center; - MIDDLE
+    align-items: stretch; - Default
+
+    *Changes the direction of the boxes.
+
+    flex-direction: row; - Horizontally
+    flex-direction: column; - Vertically
+    */
+      align-items: center;
+    }
+
+    .container-2 {
+      display: flex;
+      /*
+      *Aligns acording to the width!
+
+      justify-content: flex-end; - RIGHT
+      justify-content: center; - MIDDLE
+      justify-content: start; - LEFT
+
+      *The space between will always be resposive
+
+      justify-content: space-between; - space between the boxes but not between the margins
+      justify-content: space-evenly; - Makes the space even for box-to-box and box-to-margin
+      justify-content: space-around; - Makes a shorter space for box-to-margin and makes it bigger for box-to-box
+      */
+      justify-content: space-evenly;
+    }
+  }
+
+  .container-3 {
+    display: flex;
+    /*WRAP - keeps the style by puting it in the next line, wrapping it */
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .container-1 div,
+  .container-2 div,
+  .container-3 div {
+    border: 1px #ccc solid;
+    padding: 10px;
+  }
+
+  .box-1 {
+    /*FLEX - Gives the box a bigger size keeping the other equally in size*/
+    flex: 2;
+    /*ORDER - Let's you put the boxes in your chosen order*/
+    order: 2;
+  }
+
+  .box-2 {
+    flex: 1;
+    order: 1;
+  }
+
+  .box-3 {
+    flex: 1;
+    order: 3;
+  }
+
+  .container-2-box {
+    /*Size especified for the box, dividing it equally by the width*/
+    flex-basis: 25%;
+  }
+
+  .container-3-box {
+    flex-basis: 20%;
+  }
+</style>
+
+<div class="container-1">
+  <div class="box-1">
+    <h3>Box One</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <div class="box-2">
+    <h3>Box Two</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <div class="box-3">
+    <h3>Box Three</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+</div>
+
+<div class="container-2">
+  <div class="container-2-box">
+    <h3>Box Four</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit
+      urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies
+      massa, id pretium purus convallis nec.
+    </p>
+  </div>
+  <div class="container-2-box">
+    <h3>Box Five</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit
+      urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies
+      massa, id pretium purus convallis nec.
+    </p>
+  </div>
+  <div class="container-2-box">
+    <h3>Box Six</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit
+      urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies
+      massa, id pretium purus convallis nec.
+    </p>
+  </div>
+</div>
+
+<div class="container-3">
+  <div class="container-3-box">
+    <h3>Box Seven</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit
+      urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies
+      massa, id pretium purus convallis nec.
+    </p>
+  </div>
+  <div class="container-3-box">
+    <h3>Box Eight</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit
+      urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies
+      massa, id pretium purus convallis nec.
+    </p>
+  </div>
+  <div class="container-3-box">
+    <h3>Box Nine</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit
+      urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies
+      massa, id pretium purus convallis nec.
+    </p>
+  </div>
+  <div class="container-3-box">
+    <h3>Box Ten</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit
+      urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies
+      massa, id pretium purus convallis nec.
+    </p>
+  </div>
+  <div class="container-3-box">
+    <h3>Box Eleven</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit
+      urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies
+      massa, id pretium purus convallis nec.
+    </p>
+  </div>
+  <div class="container-3-box">
+    <h3>Box Twelve</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit
+      urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies
+      massa, id pretium purus convallis nec.
+    </p>
+  </div>
+</div>

@@ -25,28 +25,27 @@ export default function TodoList() {
 
   return (
     <div>
-      <h1>To do List</h1>
-
-      <Tooltip title="Create" aria-label="add">
-        <Fab color="primary">
-          <AddIcon
-            onClick={() => {
-              _changeStateModal("isOpen", true);
-            }}
-          />
-        </Fab>
-      </Tooltip>
+      <div>
+        <h1>To do List</h1>
+      </div>
+      <div>
+        <Tooltip title="Create" aria-label="add">
+          <Fab color="primary">
+            <AddIcon
+              onClick={() => {
+                _changeStateModal("isOpen", true);
+              }}
+            />
+          </Fab>
+        </Tooltip>
+      </div>
       {/* <Grid container spacing={2}>
-        <Grid
-          direction="row"
-          item
-          xs={3}
-          justify="space-evenly"
-          alignItems="center"
-        > */}
-      <CardView data={tasks} />
-      {/* </Grid>
-      </Grid> */}
+        <Grid direction="row" item xs={3} display="flex"> */}
+      <div>
+        <CardView data={tasks} />
+      </div>
+      {/* </Grid> */}
+      {/* </Grid> */}
       <PopModal
         open={modalState.isOpen}
         close={() => {

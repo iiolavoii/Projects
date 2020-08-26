@@ -3,7 +3,13 @@ import CardViewContent from "../CardView/CardViewContent";
 
 export default function CardView({ data }) {
   return (
-    <ul>
+    <ul
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       {data.map((task) => (
         <CardViewContent data={task} />
       ))}

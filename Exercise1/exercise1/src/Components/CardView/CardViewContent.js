@@ -6,22 +6,12 @@ export default function CardViewContent({ data }) {
 
   return (
     <div>
-      <Grid container spacing={2}>
-        <Grid
-          direction="row"
-          item
-          xs={3}
-          justify="space-evenly"
-          alignItems="center"
-        >
-          <Card>
-            <CardContent>
-              <h2>{titulo}</h2>
-              <h4>{descricao}</h4>
-            </CardContent>
-          </Card>
-        </Grid>
-      </Grid>
+      <Card>
+        <CardContent>
+          <h2>{titulo}</h2>
+          <h4>{descricao}</h4>
+        </CardContent>
+      </Card>
     </div>
   );
 }
