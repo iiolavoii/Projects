@@ -6,8 +6,9 @@ export default function CardView({ data }) {
     <ul
       style={{
         display: "flex",
-        justifyContent: "center",
+        justifyContent: "space-around",
         alignItems: "center",
+        flexWrap: "wrap",
       }}
     >
       {data.map((task) => (

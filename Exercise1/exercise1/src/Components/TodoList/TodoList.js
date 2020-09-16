@@ -5,6 +5,30 @@ import AddIcon from "@material-ui/icons/Add";
 import PopModal from "../Modals/Modal";
 import { TITULO } from "../../utils/enumeradores";
 
+const mockupData = {
+  todos: [
+    {
+      id: 1,
+      titulo: "Robert",
+      descricao: "kiosaky",
+    },
+  ],
+  todos2: [
+    {
+      id: 2,
+      titulo: "William",
+      descricao: "Ghost",
+    },
+  ],
+  todos3: [
+    {
+      id: 3,
+      titulo: "Jumip",
+      descricao: "Steven",
+    },
+  ],
+};
+
 export default function TodoList() {
   const [tasks, setTasks] = useState([]);
   const [modalState, setModalState] = useState({
@@ -26,7 +50,9 @@ export default function TodoList() {
   return (
     <div>
       <div>
-        <h1>To do List</h1>
+        <h1 style={{ display: "flex", justifyContent: "center" }}>
+          To do List
+        </h1>
       </div>
       <div>
         <Tooltip title="Create" aria-label="add">
@@ -42,7 +68,7 @@ export default function TodoList() {
       {/* <Grid container spacing={2}>
         <Grid direction="row" item xs={3} display="flex"> */}
       <div>
-        <CardView data={tasks} />
+        <CardView data={mockupData.todos} />
       </div>
       {/* </Grid> */}
       {/* </Grid> */}
