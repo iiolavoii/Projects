@@ -1,0 +1,1 @@
+Este é uma serie de exercícios que o Micael desafiou-me a fazer.

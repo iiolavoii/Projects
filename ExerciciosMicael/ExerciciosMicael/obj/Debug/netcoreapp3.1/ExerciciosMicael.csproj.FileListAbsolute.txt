@@ -1,0 +1,13 @@
+C:\Users\Asus\source\repos\ExerciciosMicael\ExerciciosMicael\bin\Debug\netcoreapp3.1\ExerciciosMicael.exe
+C:\Users\Asus\source\repos\ExerciciosMicael\ExerciciosMicael\bin\Debug\netcoreapp3.1\ExerciciosMicael.deps.json
+C:\Users\Asus\source\repos\ExerciciosMicael\ExerciciosMicael\bin\Debug\netcoreapp3.1\ExerciciosMicael.runtimeconfig.json
+C:\Users\Asus\source\repos\ExerciciosMicael\ExerciciosMicael\bin\Debug\netcoreapp3.1\ExerciciosMicael.runtimeconfig.dev.json
+C:\Users\Asus\source\repos\ExerciciosMicael\ExerciciosMicael\bin\Debug\netcoreapp3.1\ExerciciosMicael.dll
+C:\Users\Asus\source\repos\ExerciciosMicael\ExerciciosMicael\bin\Debug\netcoreapp3.1\ExerciciosMicael.pdb
+C:\Users\Asus\source\repos\ExerciciosMicael\ExerciciosMicael\obj\Debug\netcoreapp3.1\ExerciciosMicael.csprojAssemblyReference.cache
+C:\Users\Asus\source\repos\ExerciciosMicael\ExerciciosMicael\obj\Debug\netcoreapp3.1\ExerciciosMicael.AssemblyInfoInputs.cache
+C:\Users\Asus\source\repos\ExerciciosMicael\ExerciciosMicael\obj\Debug\netcoreapp3.1\ExerciciosMicael.AssemblyInfo.cs
+C:\Users\Asus\source\repos\ExerciciosMicael\ExerciciosMicael\obj\Debug\netcoreapp3.1\ExerciciosMicael.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\ExerciciosMicael\ExerciciosMicael\obj\Debug\netcoreapp3.1\ExerciciosMicael.dll
+C:\Users\Asus\source\repos\ExerciciosMicael\ExerciciosMicael\obj\Debug\netcoreapp3.1\ExerciciosMicael.pdb
+C:\Users\Asus\source\repos\ExerciciosMicael\ExerciciosMicael\obj\Debug\netcoreapp3.1\ExerciciosMicael.genruntimeconfig.cache
